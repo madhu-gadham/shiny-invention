@@ -1,0 +1,28 @@
+﻿ body
+{
+min-height: 100vh ;
+display: flex ;
+align-items: center ;
+justify-content: center ;
+background-color: red;
+text-align:center;
+
+}
+.name
+{
+padding :0.25ren 0.2rem;
+background: red;
+font-size: 150px;
+
+color:gold
+}
+.namebtn{
+padding: 0.2rem 0.25rem;
+background: white;
+position:relative;
+overflow:hidden;
+}
+.namebtn:hover 
+{
+background: yellow;
+}

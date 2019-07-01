@@ -1,0 +1,25 @@
+﻿body{
+min-height=100vh;
+
+display: flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.colorBtn
+{
+padding: 10px;
+border: 3px solid #fefefe;
+color:#fefefe;
+border-radius:7px;
+font-size:1.5 rem;
+background: rgb(0,0,0,0.6);
+text-transform:capitalize;
+}
+.colorBtn:hover{
+color: red;
+font-size:2rem;
+}

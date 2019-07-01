@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+min-height: 100vh;
+align-items:center;
+display:flex;
+justify-content:center;
+text-transform:capitalize;
+
+}
+.hexBtn{
+ border: 1rem;
+ color: red;
+ border-radius: 1rem;
+ padding: 2rem;
+ font-size:2rem;
+ }
+ .container{
+ justify-content:center;}
+ .hexBtn:hover{
+ color: black;
+ cursor:pointer;
+ }
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="hexcolor">hexcolor code:<span class="hex"</span></h1>
+<button type="button" class="hexBtn">press here</button>
+</div>
+<script>
+const code = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+const bcg = document.querySelector('body');
+const btn = document.querySelector('.hexBtn');
+const hex = document.querySelector('.hex');
+btn.addEventListener('click',hexcode);
+function hexcode () {
+let hexcol= '#';
+   for(let i=0;i<6;i++){
+   let r = Math.floor(Math.random()*code.length);
+   hexcol +=code[r];
+   
+   }
+   bcg.style.backgroundColor = hexcol;
+   hex.innerHTML = hexcol;
+   }
+   </script>
+</body>

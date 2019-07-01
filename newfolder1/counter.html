@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+min-height : 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: capitalize;
+
+
+}
+.counter-box{
+flex:0 0 70%;
+border:3px solid grey;
+padding:1rem;
+box-shadow:3px 3px 10px 10px black;
+background-color:blue;
+text-align:center;}
+
+
+
+
+
+
+.AddCount{
+color:red;
+border-radius:15px;
+cursor:pointer;
+padding:1.5rem;
+font-size:2rem;
+
+}
+.counter{
+ font-size: 4rem;
+ color: black;
+ }
+.AddCount:hover{
+background:red;
+color:gold;
+}
+.LowerCount{
+color:red;
+border-radius:15px;
+cursor:pointer;
+padding:1.5rem ;
+font-size:2rem;
+
+}
+.LowerCount:hover {
+background:red;
+color: gold;
+}
+</style>
+
+</head>
+<body>
+
+
+<div class="counter-box">
+
+<h1>counter</h1>
+<h1 class="counter">0</h1>
+<div id="btns">
+<button type="button" class="AddCount">addcount</button>
+<button type="button" class="LowerCount">lowercount</button>
+</div>
+</div>
+</body>
+
+
+<script>
+const AddCount = document.querySelector('.AddCount');
+const LowerCount = document.querySelector('.LowerCount');
+const counter = document.querySelector('.counter');
+
+let c=0;
+AddCount.addEventListener( 'click', Add);
+
+LowerCount.addEventListener('click',sub);
+
+function Add () {
+
+   c++;
+  counter.innerHTML = c;
+  }
+ function sub() {
+ c--
+ counter.innerHTML = c;
+ }
+  
+  
+  </script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>

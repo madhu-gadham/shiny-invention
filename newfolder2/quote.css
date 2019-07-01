@@ -1,0 +1,28 @@
+﻿body{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: yellow;
+color:red;
+font-family:'calibri',san-serif;
+font-weigt: 400;
+text-transform:caitalize;
+}
+.container{
+
+text-align: center;
+padding: 2rem;
+border-radius: 5px;
+backgrond-color: #fff;
+flex:0 80%;
+}
+
+#quoteBtn{
+border: none;
+color: red;
+border-radius: 2px;
+}
+
+
+ 

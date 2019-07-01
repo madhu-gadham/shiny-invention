@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+min-height: 100vh;
+align-items:center;
+text-transform:capitalize;
+display:flex;
+color:white;
+justify-content:center;
+background:skyblue;
+
+}
+.container{
+box-shadow:10px;
+border-radius: 2rem;
+margin:5px;
+background:blue;
+padding:2rem;
+}
+#messageIn{
+display:block;
+fontsize: 4px;
+}
+
+#messageOut{
+   color: white;
+    }
+
+
+</style>
+
+
+
+
+</head>
+<body>
+<div class="container">
+<h1>message you would like to send</h1>
+<input type="text" name="messageIn" id="messageIn"></input>
+<button type="button" id="sendBtn">press to send</button>
+<h1>last message delivered</h1>
+<h1 id="messageOut"></h1>
+</div>
+<script>
+const messageIn = document.querySelector('#messageIn');
+const sendBtn  = document.querySelector('#sendBtn');
+const messageOut = document.querySelector('#messageOut');
+
+ sendBtn.addEventListener('click', msgSend)
+ 
+ function msgSend () 
+ {
+ let content = messageIn.value;
+      if (content   === '') {
+	  alert('please enter valid msg')
+	  }
+	  else {
+	  messageOut.innerHTML  =  content;
+	  messageIn.value  =  '';
+	  }
+	  }
+	  
+
+
+
+</script>
+
+</body>
+</html>
